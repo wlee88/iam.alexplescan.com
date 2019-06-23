@@ -11,8 +11,8 @@ const professionalHeadshotImagePaths = generateImagePaths(TOTAL_COUNT_OF_PHOTOS_
 let imageCounter = 1;
 
 const imageOfProfessionalism = window.document.querySelector(IMAGE_QUERY_SELECTOR);
-
-imageOfProfessionalism.addEventListener('click', () => {
+const documentBody = window.document.querySelector(BODY_QUERY_SELECTOR);
+documentBody.addEventListener('click', () => {
   imageCounter++;
   if (imageCounter >= TOTAL_COUNT_OF_PHOTOS_OF_ME_LOOKING_PROFESSIONAL) {
     imageCounter = 1;
