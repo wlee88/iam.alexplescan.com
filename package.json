@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack",
     "build:watch": "webpack --watch",
-    "serve": "python -m SimpleHTTPServer 4000"
+    "serve": "docker container run --rm --name iam.alexplescan.com -p 3000:80 -v $(pwd):/usr/share/nginx/html nginx"
   },
   "author": "",
   "license": "ISC",
