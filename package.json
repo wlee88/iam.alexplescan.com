@@ -1,22 +1,21 @@
 {
-  "name": "alex-plescan",
+  "name": "iam.alexplescan.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "directories": {
-    "doc": "doc"
-  },
-  "scripts": {
-    "build": "webpack",
-    "build:watch": "webpack --watch",
-    "serve": "docker container run --rm --name iam.alexplescan.com -p 3000:80 -v $(pwd):/usr/share/nginx/html nginx"
-  },
-  "author": "",
-  "license": "ISC",
+  "main": "index.js",
+  "license": "MIT",
   "devDependencies": {
+    "@types/node": "^12.0.10",
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.3"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "serve": "python3 -m http.server 4000"
+  },
+  "dependencies": {
+    "shake.js": "^1.2.2"
   }
 }
