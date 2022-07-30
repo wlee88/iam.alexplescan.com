@@ -19,10 +19,10 @@ autoLaunchElem.addEventListener('click', e => {
 function toggleAutoLaunch () {
   launcher.toggleAutoLaunch()
   if (launcher.isAutoLaunching) {
-    autoLaunchElem.innerText = 'stop automatically launching alex things'
+    autoLaunchElem.innerText = 'stop automatically launching things alex likes'
     document.location.hash = AUTO_LAUNCH_HASH
   } else {
-    autoLaunchElem.innerText = 'start automatically launching alex things'
+    autoLaunchElem.innerText = 'start automatically launching things alex likes'
     document.location.hash = ''
   }
 }
