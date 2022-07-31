@@ -2,7 +2,7 @@ import { Size } from './Size'
 import { Point } from './Point'
 import { randomNumberBetween } from './randomNumberBetween'
 
-const IMAGES = ['./alex.png', './alex2.png', './alex3.png','./alex4.png', './alex5.png']
+const IMAGES = ['./alex.png', './alex2.png', './alex3.png', './alex5.png']
 
 export class AlexHeadImage {
   readonly size: Size = new Size(120, 183)
